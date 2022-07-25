@@ -109,8 +109,17 @@ img {
 
 .logo-img{
   width:314.72px;
+  height:70px;
 }
+/* Logo in small mobiles */
+@media (max-width: 768px) {
 
+
+.logo-img{
+  width:220px;
+  height: 48.93px;
+}
+}
 /*
 ---------------------------------------------
 global styles
@@ -246,6 +255,10 @@ section {
 header
 ---------------------------------------------
 */
+
+
+
+
 .background-header {
   /* background: rgb(176,225,225) !important;
   background: linear-gradient(-145deg, rgba(176,225,225,1) 0%, rgba(246,191,159,1) 100%) !important; */
@@ -551,7 +564,17 @@ header
   color: #66bfbf;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1140px) {
+  .header-area .main-nav .nav li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-area .main-nav:before {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
   .header-area .main-nav .nav li {
     padding-left: 7px;
     padding-right: 7px;
@@ -560,6 +583,7 @@ header
     display: none;
   }
 }
+
 
 @media (max-width: 767px) {
 
@@ -690,26 +714,8 @@ section.main-banner {
   z-index: 2;
 }
 
-.main-banner .right-image::after {
-  position: absolute;
-  /* background-image: url(../images/banner-right-dec.png); */
-  width: 378px;
-  height: 378px;
-  content: '';
-  right: -25%;
-  z-index: 1;
-}
 
-.main-banner .header-text::after {
-  position: absolute;
-  /* background-image: url(../images/banner-left-dec.png); */
-  width: 214px;
-  height: 429px;
-  content: '';
-  left: 0;
-  bottom: -240px;
-  z-index: 1;
-}
+
 
 .main-banner .header-text h6 {
   position: relative;
@@ -799,7 +805,14 @@ services
 .services .owl-dots .active {
   background-color: #66bfbf;
 }
-
+#services{
+  margin-top: 80px;
+}
+@media (max-width:992px) {
+  #services {
+    margin-top:0px;
+  }
+}
 
 /*
 ---------------------------------------------
@@ -815,27 +828,26 @@ section.our-courses .section-heading p {
   padding: 0px 60px;
 }
 
-section.our-courses:before {
+/* section.our-courses:before {
   position: absolute;
   content: '';
-  /* background-image: url(../images/our-courses-left-dec.png); */
+
   left: 45px;
   top: -140px;
   width: 291px;
   height: 231px;
   z-index: 1;
-}
+} */
 
-section.our-courses:after {
+/* section.our-courses:after {
   position: absolute;
   content: '';
-  /* background-image: url(../images/our-courses-right-dec.png); */
   right: 45px;
   top: -140px;
   width: 291px;
   height: 231px;
   z-index: 1;
-}
+} */
 
 section.our-courses .naccs {
   position: relative;
@@ -1286,6 +1298,7 @@ section.contact-us ul.social-icons li a:hover {
   right: 20px;
   margin-left: 20px;
   max-width: 300px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;
 }
 
 .callout-header {
@@ -1293,9 +1306,9 @@ section.contact-us ul.social-icons li a:hover {
   background: #66bfbf;
   font-size: 30px;
   color: white;
-  border-top: 1px solid;
+  /* border-top: 1px solid;
   border-left: 1px solid;
-  border-right: 1px solid;
+  border-right: 1px solid; */
 
 }
 
@@ -1303,9 +1316,9 @@ section.contact-us ul.social-icons li a:hover {
   padding: 15px;
   background-color: #ef8172;
   color: white;
-  border-bottom: 1px solid;
+  /* border-bottom: 1px solid;
   border-left: 1px solid;
-  border-right: 1px solid;
+  border-right: 1px solid; */
 }
 
 .closebtn {
@@ -1318,7 +1331,7 @@ section.contact-us ul.social-icons li a:hover {
 }
 
 .closebtn:hover {
-  color: #66bfbf;
+  color: #1a1a1a;
 }
 
 .callout a{
@@ -1866,8 +1879,8 @@ body {
     margin-left: 60px;
   }
   .main-banner .header-text h2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 50px;
   }
   /* .header-area {
     background: rgb(176,225,225) !important;
@@ -1921,7 +1934,7 @@ body {
 
   #content-desktop {display: none;}
   #content-mobile {display: block;}
-
+  #gif-top {display: none;}
   .main-banner .header-text {
     text-align: center;
     margin-bottom: 60px;
