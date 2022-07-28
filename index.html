@@ -22,26 +22,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/lightbox.css">
-
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-  <script>
-    function SubForm() {
-      $.ajax({
-        url: 'https://api.apispreadsheets.com/data/qKcWk36Nh1VKfSwY/',
-        type: 'post',
-        data: $("#application-form").serializeArray(),
-        success: function() {
-          alert("Form Data Submitted :)")
-        },
-        error: function() {
-          alert("There was an error :(")
-        }
-      });
-    }
-  </script>
-
-
-
+  <!-- <script defer src="assets/js/form.js"></script> -->
 </head>
 
 <body>
@@ -50,14 +31,14 @@
   <!-- Callout trial -->
 
 
-  <div class="callout">
+  <!-- <div class="callout">
     <div class="callout-header">Hello there researcher!</div>
     <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
     <div class="callout-container">
-      <p style="color:#fff;">We have received many applications and will attend each and every one of them, we will contact you at the earliest <u><a href="contact-us.html" style="text-decoration: underline;">Contact Us</a></u> for any further
+      <p style="color:#fff;">We have received many applications and will attend each and every one of them, we will contact you at the earliest. <u><a href="contact-us.html" style="text-decoration: underline;">Contact Us</a></u> for any further
         information.</p>
     </div>
-  </div>
+  </div> -->
   <!-- Callout trial ends -->
 
   <!-- ***** Header Area Start ***** -->
@@ -81,7 +62,11 @@
                 <a href="javascript:void(0)">Pages</a>
                 <ul class="sub-menu">
                   <li><a href="about-us.html">About Us</a></li>
+
+                  <!-- ID's are used to define visibility in of either desktop or mobile, but not both -->
                   <li id="nav-for-desktop"><a href="whatsapp.html">Functioning</a></li>
+                  <li id="nav-for-mobile"><a href="assets/dist/index.html">Functioning</a></li>
+
                   <li><a href="contact-us.html">Contact Us</a></li>
                   <!-- <li><a href="donation.html">Donate</a></li> -->
                 </ul>
@@ -105,9 +90,9 @@
         <div class="col-lg-6 align-self-center">
           <div class="header-text">
             <h6>Welcome to <em>research within your reach</em></h6>
-            <h2>Network with people across the globe and learn <em>primary research</em> the easy way.</h2>
+            <h2>Network with people across the globe and learn <em>original research</em> the easy way.</h2>
             <div class="main-button-gradient">
-              <div class="scroll-to-section"><a href="#cta-main-common" class="index-top-button">Join Us Now!</a></div>
+              <div class="scroll-to-section"><a href="#contact-section" class="index-top-button">Join Us Now!</a></div>
             </div>
           </div>
         </div>
@@ -127,7 +112,7 @@
         <div class="col-lg-12">
           <div class="section-heading">
             <h6>Our Services</h6>
-            <h4>Provided <em>Services</em></h4>
+            <h4>How can we <em>help</em> you</h4>
           </div>
         </div>
         <div class="col-lg-12">
@@ -264,7 +249,7 @@
                   <div class="menu">
                     <div class="active gradient-border"><span>Biostatistics</span></div>
                     <div class="gradient-border"><span>Research Proposal</span></div>
-                    <div class="gradient-border"><span>Web Design</span></div>
+                    <div class="gradient-border"><span>Good Writing</span></div>
                     <!-- <div class="gradient-border"><span>WordPress</span></div> -->
                   </div>
                 </div>
@@ -325,9 +310,9 @@
                           </div>
                         </div>
                         <div class="right-content">
-                          <h4>Web Design</h4>
-                          <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan.<br><br>Kogi VHS freegan bicycle rights try-hard green juice
-                            probably haven't heard of them cliche la croix af chillwave.</p>
+                          <h4>Good Writing</h4>
+                          <p>Writing an essay or a research paper is the same, it's English right! <br><br> We often don't cater to the nuances in everyday communication or in daily writing, but would you like a complex and unstructured sentence perpetually up online associated to your name? For sure, I wouldn't.
+                          </p>
                         </div>
                       </div>
                     </li>
@@ -336,7 +321,7 @@
                         <div class="left-image">
                           <img src="assets/images/courses-04.jpg" alt="">
                           <div class="price">
-                            <h6>$76</h6>
+                            <!-- <h6>$76</h6> -->
                           </div>
                         </div>
                         <!-- <div class="right-content">
@@ -367,7 +352,7 @@
       <div class="row">
         <div class="col-lg-5 offset-lg-1">
           <div class="left-image">
-            <img src="assets/images/audit.jpg" alt="">
+            <img src="assets/images/audit.jpg" style="border-radius: 15px;" alt="">
           </div>
         </div>
         <div class="col-lg-5 align-self-center">
@@ -375,7 +360,7 @@
           <h4>You'll only gain by joining us</h4>
           <p>Research is to aid science progress ahead, we will aid you develop the analytical approach to get the requisite critial thinking.</p>
           <div class="white-button">
-            <a href="#cta-main-common">Join Us</a>
+            <a href="#contact-section">Join Us</a>
           </div>
         </div>
       </div>
@@ -484,9 +469,9 @@
   <!-- Trial section ends -->
 
   <!-- Comment starts here -->
-  <section class="contact-us-index" id="contact-section" style="margin:-20px 0 0;">
-    <div class="container">
-      <div class="row">
+  <section class="contact-us" id="contact-section" style="margin:80px 0 0 20px;">
+    <!-- <div class="container">
+      <div class="row"> -->
         <!-- <  <div class="col-lg-8">
           <div id="map"> -->
         <!-- Comment ends here -->
@@ -522,19 +507,18 @@
 
         <!-- Comment ends here -->
 
-        <div class="col-lg-12">
-          <div class="col-lg-8">
-            <div id="contact" method="post">
-
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="section-heading">
-                    <h6>Join us</h6>
-                    <h4>Say <em>Hello</em> to PearResearch</h4>
-                    <p>Please wait a few seconds after clicking submit</p>
+        <!-- <div class="col-lg-12"> -->
+          <!-- <div class="col-lg-8">
+            <div>
+              <form id="contact" method="post" style="margin-left:0px;">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="section-heading">
+                      <h6>Join us</h6>
+                      <h4>Say <em>Hello</em> to PearResearch</h4>
+                      <p>Please wait a few seconds after clicking submit</p>
+                    </div>
                   </div>
-                </div>
-                <form id="application-form" method="post">
 
                   <div class="col-lg-12">
                     <fieldset>
@@ -543,12 +527,17 @@
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="" />
+                      <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required />
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <input type="text" name="whatsapp-no" id="whatsapp-no" placeholder="Whatsapp number" required="" />
+                      <input type="text" name="whatsapp-no" id="whatsapp-no" placeholder="Whatsapp number" required />
+                    </fieldset>
+                  </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <input type="text" name="prior-exp" id="prior-exp" placeholder="Prior Research Experience(if any)" />
                     </fieldset>
                   </div>
                   <div class="col-lg-12">
@@ -565,11 +554,6 @@
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <input type="text" name="prior-exp" id="prior-exp" placeholder="Prior Research Experience(if any)" />
-                    </fieldset>
-                  </div>
-                  <div class="col-lg-12">
-                    <fieldset>
                       <select name="other-research" id="other-research">
                         <option value="">Interested in research other than original studies?</option>
                         <option value="Yes">Yes</option>
@@ -577,6 +561,7 @@
                       </select>
                     </fieldset>
                   </div>
+
                   <div class="col-lg-12">
                     <fieldset>
                       <select name="group-apply" id="group-apply">
@@ -591,37 +576,160 @@
                       <textarea name="message" id="message" placeholder="Any message for us"></textarea>
                     </fieldset>
                   </div>
-                </form>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <button onclick="SubForm ()" class="main-gradient-button">Send Message</button>
-                  </fieldset>
-                </div>
-              </div>
+                  <div class="col-lg-12">
+                    <fieldset>
+                      <button onclick="SubForm ()" id="contact" class="main-gradient-button">Send Message</button>
+                    </fieldset>
+                  </div>
+              </form>
 
             </div>
+
           </div>
         </div>
-        <div class="col-lg-12">
-          <ul class="social-icons">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <!-- <li><a href="#"><i class="fa fa-rss"></i></a></li>
+      </div> -->
+      <div class="container">
+        <div class="row">
+          <!-- <div class="col-lg-8">
+            <div id="map"> -->
+
+              <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7151.84524236698!2d-122.19494600413192!3d47.56605883252286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5490695e625f8965%3A0xf99b055e76477def!2sNewcastle%20Beach%20Park%20Playground%2C%20Bellevue%2C%20WA%2098006%2C%20USA!5e0!3m2!1sen!2sth!4v1644335269264!5m2!1sen!2sth" width="100%" height="420px" frameborder="0" style="border:0; border-radius: 15px; position: relative; z-index: 2;" allowfullscreen=""></iframe>
+              <div class="row">
+                <div class="col-lg-4 offset-lg-1">
+                  <div class="contact-info">
+                    <div class="icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <h4>Phone</h4>
+                    <span>010-020-0340</span>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="contact-info">
+                    <div class="icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <h4>Mobile</h4>
+                    <span>090-080-0760</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-lg-12">
+          <div class="col-lg-8">
+
+            <form id="contact" action="" name="googlesheet" method="post" style="margin-left:0px;">
+
+
+              <div class="row">
+
+                <div class="col-lg-12">
+                  <div class="section-heading">
+                    <h6>Join us</h6>
+                    <h4><em>Learn</em> with PearResearch</h4>
+                  </div>
+                </div>
+                <div class="col-lg-6" style="position:relative;">
+                      <fieldset>
+                        <p class="required-form">*</p>
+                        <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" />
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6" style="position:relative;">
+                      <p class="required-form">*</p>
+                      <fieldset>
+                        <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email"  />
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6" style="position:relative;">
+                      <p class="required-form">*</p>
+                      <fieldset>
+                        <input type="text" name="whatsappno" id="whatsappno" placeholder="Whatsapp number (including country code)"  />
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <input type="text" name="yoursocial" id="yoursocial" placeholder="LinkedIn handle"  />
+                      </fieldset>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <fieldset>
+                        <select name="careerstage" id="careerstage">
+                          <option value="">Stage in your career</option>
+                          <option value="Undergrad">Undergrad</option>
+                          <option value="Undergraduate studies">Undergraduate studies</option>
+                          <option value="Postgraduate">Postgraduate</option>
+                          <option value="Postgraduate studies">Postgraduate studies</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </fieldset>
+                    </div>
+              <div class="col-lg-6">
+                      <fieldset>
+                        <select name="groupapply" id="groupapply">
+                          <option value="">Apply as a group</option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <input type="text" name="priorexp" id="priorexp" placeholder="Prior Research Experience(if any)" />
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <select name="otherresearch" id="otherresearch">
+                          <option value="">Interested in research other than original studies?</option>
+                          <option value="Yes">Yes</option>
+                          <option value="No">No</option>
+                        </select>
+                      </fieldset>
+                    </div>
+                    <div class="col-lg-12">
+                      <fieldset>
+                        <textarea name="message" id="message" placeholder="Any questions with your submission?"></textarea>
+                      </fieldset>
+                    </div>
+                    <div id="form_alert" style="text-align:center;">
+
+                    </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="contact" name="submit" class="main-gradient-button">Send Message</button>
+                  </fieldset>
+
+                </div>
+              </div>
+            </form>
+          </div>
+          </div>
+
+      <div class="col-lg-12">
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="mailto:info@pearresearch.com"><i class="fa fa-envelope"></i></a></li>
+          <!-- <li><a href="#"><i class="fa fa-rss"></i></a></li>
             <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-          </ul>
+        </ul>
 
 
 
 
 
 
-        </div>
-        <div class="col-lg-12">
-          <p class="copyright">Copyright © 2022 PearResearch
-          </p>
-        </div>
       </div>
+      <div class="col-lg-12">
+        <p class="copyright">Copyright © 2022 PearResearch
+        </p>
+      </div>
+    </div>
     </div>
   </section>
 
@@ -684,6 +792,24 @@
       checkSection();
     });
   </script>
+
+
+
+
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyjGvYe6OZJ6hfgOnUQT_-do3iKmoukED0TG8zLnr3XFIjldsjINsVAo48OFr-OAxTE/exec'
+    const form = document.forms['googlesheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => $("#form_alert").html("<div class='alert alert-success'> We have received your application. You could <a href='contact-us.html'><u>contact&nbsp;us</u></a> if you have any doubts. </div>"))
+        .catch(error => $("#form_alert").html("<div class='alert alert-danger'> Something didn't go well. Please contact us on info@pearresearch.com and we'll sort it for you.</div>"))
+    })
+  </script>
+
+
 </body>
 
 </html>

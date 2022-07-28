@@ -111,6 +111,9 @@ img {
   width:314.72px;
   height:70px;
 }
+#nav-for-mobile{display:none;}
+
+
 /* Logo in small mobiles */
 @media (max-width: 768px) {
 
@@ -120,6 +123,7 @@ img {
   height: 48.93px;
 }
 #nav-for-desktop{display: none;}
+#nav-for-mobile{display: block;}
 }
 /*
 ---------------------------------------------
@@ -1110,8 +1114,62 @@ section.testimonials:after {
   background-color: #66bfbf;
 }
 
+.required-form{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: red;
+}
+
 
 /* Trial section */
+/* form trial */
+/* .form-control{
+  border: none;
+  padding: 0px;
+  position: relative;
+}
+
+.form-control.success input{
+  border-color: #2ecc71;
+} */
+
+/* .form-control.error input{
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control.success i .fa-check {
+  visibility: visible;
+  border-color: #2ecc71;
+} */
+/*
+.form-control.error i .fa-exclamation {
+  visibility: visible;
+  border-color: #e74c3c;
+}
+
+
+.form-control small {
+  position: absolute;
+  bottom:11px;
+  left:10px;
+  font-size: 13px;
+  visibility: hidden;
+} */
+
+/* .form-control.error small {
+  visibility: visible;
+  border-color: #e74c3c;
+} */
+
+
 
 #content-desktop {display: block;}
 #content-mobile {display: none;}
@@ -1229,6 +1287,21 @@ section.contact-us #contact input {
   margin-bottom: 30px;
 }
 
+section.contact-us #contact select {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #f4f7fb;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #7a7a7a;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+
 section.contact-us #contact textarea {
   width: 100%;
   min-height: 140px;
@@ -1294,176 +1367,9 @@ section.contact-us ul.social-icons li a:hover {
 }
 
 
-/* Content-Index-trial */
-
-section.contact-us-index {
-  /* background-image: url(../images/footer-bg.png); */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0px;
-  position: relative;
-}
-
-section.contact-us-index:after {
-  /* position: absolute; */
-  content: '';
-  /* background-image: url(../images/footer-left-dec.png); */
-  left: 0px;
-  top: 60px;
-  width: 267px;
-  height: 396px;
-  z-index: 1;
-}
-
-section.contact-us-index .contact-info {
-  background-color: #fff;
-  margin-top: -30px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-  border-radius: 15px;
-  z-index: 5;
-  position: relative;
-  padding: 20px;
-}
-
-section.contact-us-index .contact-info .icon i {
-  float: left;
-  margin-right: 15px;
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  background: #66bfbf;
-  color: #fff;
-}
-
-section.contact-us-index .contact-info h4 {
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-section.contact-us-index .contact-info span {
-  font-size: 15px;
-  color: #66bfbf;
-  font-weight: 700;
-}
-
-section.contact-us-index .section-heading {
-  text-align: left;
-  margin-bottom: 40px;
-}
-
-section.contact-us-index #contact {
-  margin-left: 0px;
-  position: relative;
-  z-index: 5;
-  background-color: #fff;
-  margin-top: 40px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
-  border-radius: 15px;
-  padding: 40px;
-}
-
-section.contact-us-index #contact input {
-  width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  background-color: #f4f7fb;
-  outline: none;
-  border: none;
-  box-shadow: none;
-  font-size: 13px;
-  font-weight: 500;
-  color: #7a7a7a;
-  padding: 0px 15px;
-  margin-bottom: 30px;
-}
-
-section.contact-us-index #contact select {
-    width: 100%;
-  height: 40px;
-  border-radius: 5px;
-  background-color: #f4f7fb;
-  outline: none;
-  border: none;
-  box-shadow: none;
-  font-size: 13px;
-  font-weight: 500;
-  color: #7a7a7a;
-  padding: 0px 15px;
-  margin-bottom: 30px;
-}
 
 
 
-section.contact-us-index #contact textarea {
-  width: 100%;
-  min-height: 140px;
-  max-height: 180px;
-  border-radius: 5px;
-  background-color: #f4f7fb;
-  outline: none;
-  border: none;
-  box-shadow: none;
-  font-size: 13px;
-  font-weight: 500;
-  color: #7a7a7a;
-  padding: 15px;
-  margin-bottom: 30px;
-}
-
-section.contact-us-index #contact button {
-  float: right;
-  font-size: 13px;
-  color: #fff;
-  background: #66bfbf;
-  /* background: linear-gradient(-145deg, rgba(176,225,225,1) 0%, rgba(246,191,159,1) 100%); */
-  padding: 12px 30px;
-  display: inline-block;
-  border-radius: 5px;
-  font-weight: 500;
-  text-transform: uppercase;
-  transition: all .3s;
-  transition: all .3s;
-  border: none;
-  outline: none;
-}
-
-section.contact-us-index #contact button:hover {
-  opacity: 0.9;
-}
-
-section.contact-us-index ul.social-icons li {
-  display: inline-block;
-  margin: 0px 5px;
-}
-
-section.contact-us-index ul.social-icons {
-  text-align: center;
-  margin-top: 70px;
-}
-
-section.contact-us-index ul.social-icons li a {
-  width: 44px;
-  height: 44px;
-  display: inline-block;
-  text-align: center;
-  line-height: 44px;
-  background-color: #fff;
-  color: #66bfbf;
-  border-radius: 50%;
-  transition: all .5s;
-}
-
-section.contact-us-index ul.social-icons li a:hover {
-  background-color: #66bfbf;
-  color: #fff;
-}
-
-/* Content Index trial ends */
 
 /* Callout box */
 .callout {
@@ -1514,6 +1420,11 @@ section.contact-us-index ul.social-icons li a:hover {
 }
 
 /* Callout box ends */
+
+input:required {
+  border: thin red solid;
+}
+
 /* Donation  */
 
 section.contact-us ul.donation li {
@@ -1539,7 +1450,7 @@ section.contact-us ul.donation li a {
 
 }
 
-section.contact-us ul.donation li a:hover {
+section. ul.donation li a:hover {
 
 }
 
@@ -2105,6 +2016,9 @@ body {
   }
 }
 
+
+
+
 @media (max-width: 992px) {
 
   #content-desktop {display: none;}
@@ -2138,16 +2052,7 @@ body {
   section.contact-us #contact button {
     float: none;
   }
-/* Index contact */
-  section.contact-us-index .contact-info {
-    margin-top: 15px;
-  }
-  section.contact-us-index #contact {
-    margin-left: 0px;
-  }
-  section.contact-us-index #contact button {
-    float: none;
-  }
+
 
   section.get-info .left-image {
     margin-right: 0px;
