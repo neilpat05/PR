@@ -2093,9 +2093,16 @@ body {
 @media (max-width: 767px) {
 
   #page-heading-small {display: none;}
+
   .header-area .main-nav .nav li.has-sub ul.sub-menu {
     display: none;
   }
+
+#page-heading-thankyou{
+  
+  font-size: 30px;
+}
+
   section.our-courses ul.nacc li .left-image,
   section.our-team ul.nacc li .right-image {
     position: relative;
